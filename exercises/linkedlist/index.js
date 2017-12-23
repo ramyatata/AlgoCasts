@@ -142,6 +142,20 @@ class LinkedList {
         }
     }
   }
+
+  forEach(fn) {
+    //loop through linked list
+      //foreach node cal fn with node, ind
+
+    let node = this.head;
+    let ind = 0;
+
+    while(node) {
+      fn(node, ind);
+      node = node.next;
+      ind++;
+    }
+  }
 }
 
 
